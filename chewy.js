@@ -1,5 +1,6 @@
 const express = require('express');
 const { Client, MessageEmbed } = require('discord.js-selfbot');
+const chewy = require("./chewy.json");
 const app = express();
 function sleep(milliseconds) {
 var start = new Date().getTime();
@@ -85,6 +86,6 @@ client.on("ready", () => {
 
 ///////////////////////////////////// TOKEN /////////////////////////////////////
 
-client.login(ayarlar.token)
+client.login(chewy.token)
 
 ///////////////////////////////////// TOKEN END /////////////////////////////////////
